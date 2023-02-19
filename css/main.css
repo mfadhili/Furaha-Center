@@ -31,10 +31,12 @@ body {
 a {
   text-decoration: none;
 }
+.top-nav {
+  
+}
 
 /* Top Nav section*/
 .top-header {
-  position: fixed;
   width: 100%;
   background-color: var(--clr-primary);
   
@@ -190,4 +192,3 @@ a {
   cursor: pointer;
   font-size: 1.1rem;
 }
-
