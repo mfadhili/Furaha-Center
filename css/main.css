@@ -31,8 +31,8 @@ body {
 a {
   text-decoration: none;
 }
-.top-nav {
-  
+.fixed-content {
+  overflow: hidden;
 }
 
 /* Top Nav section*/

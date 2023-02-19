@@ -23,6 +23,7 @@
 .nav-bar {
   width: 100%;
   background-color: var(--clr-dark);
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.25);
   
   display: flex;
   justify-content: center;
@@ -39,8 +40,47 @@
   justify-content: space-between;
   align-items: center;
   margin: .6rem;
+  flex-wrap: wrap; /* Fix for wrapping in responsive design*/
 }
 
 .nav-container ul a {
   color: var(--clr-primary);
+  font-size: 0.9rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Side Bar and Horizon setting*/
+
+.horizon {
+  display: flex;
+  height: 100vh;
+}
+
+.main-area {
+  flex: 5;
+  overflow-y: auto;
+}
+
+.side-bar {
+  flex: 1;
+  display: flex;
+  
+  background-color: var(--clr-accent);
+  border: 1px solid var(--clr-dark);
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.side-container li {
+  list-style: none;
+  padding-top: 0.7em;
+}
+
+.side-container a {
+  color: var(--clr-dark);
+  font-size: 1em;
+  font-weight: var(--fw-lightBold);
 }
