@@ -10,6 +10,7 @@
 /* Colors from palette https://coolors.co/palette/264653-2a9d8f-e9c46a-f4a261-e76f51 */
 :root {
   --clr-primary: #2A9D8F;
+  --clr-primary-light: #9be7d7;
   --clr-dark: #264653;
   --clr-accent-light: #E9C46A;
   --clr-accent: #F4A261;
@@ -26,6 +27,9 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   color: var(--clr-dark);
+  
+  background: url("../images/sports.png");
+  background-size: 200px 200px;
 }
 
 a {

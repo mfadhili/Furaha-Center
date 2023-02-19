@@ -1,0 +1,39 @@
+/* CSS file for main area*/
+
+/* Fonts import: Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
+
+/* Colors from palette https://coolors.co/palette/264653-2a9d8f-e9c46a-f4a261-e76f51 */
+
+:root {
+  --clr-primary: #2A9D8F;
+  --clr-primary-light: #9be7d7;
+  --clr-dark: #264653;
+  --clr-accent-light: #E9C46A;
+  --clr-accent: #F4A261;
+  --clr-accent-dark: #E76F51;
+  
+  /*  Font Weights*/
+  --fw-normal: 400;
+  --fw-lightBold: 500;
+  --fw-bold: 600;
+  --fw-black: 700;
+}
+.main-area{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container {
+  width: 80%;
+  height: 800px;
+  
+  border: 1px solid var(--clr-dark);
+  margin-left: 7%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  
+  background-color: var(--clr-accent-light);
+  opacity: 0.4;
+  
+}
