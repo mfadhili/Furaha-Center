@@ -29,7 +29,7 @@
   height: 800px;
   
   border: 1px solid var(--clr-dark);
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
   
   margin-left: 7%;
   margin-top: 40px;
@@ -39,3 +39,5 @@
   opacity: 0.4;
   
 }
+
+

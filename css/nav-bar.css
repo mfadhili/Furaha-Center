@@ -30,7 +30,7 @@
 }
 
 .nav-container {
-  width: 50%;
+  width: 87%;
   margin-top: 2px;
   margin-bottom: 2px;
 }
@@ -40,6 +40,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0.4em;
+  list-style-type: none;
   flex-wrap: wrap; /* Fix for wrapping in responsive design*/
 }
 
@@ -49,6 +50,7 @@
   font-weight: var(--fw-bold);
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  padding-right: 5px;
 }
 
 /* Side Bar and Horizon setting*/
@@ -56,15 +58,14 @@
 .horizon {
   display: flex;
   height: 100vh;
+  flex-direction: column;
 }
 
 .main-area {
-  flex: 5;
   overflow-y: auto;
 }
 
 .side-bar {
-  flex: 1;
   display: flex;
   
   background-color: var(--clr-accent);
@@ -73,16 +74,74 @@
   
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 60px;
+  
 }
 
 .side-container li {
   list-style: none;
-  padding-top: 0.7em;
+  /*padding-top: 0.7em;*/
 }
 
 .side-container a {
   color: var(--clr-dark);
-  font-size: 0.95em;
+  font-size: 0.9em;
   font-weight: var(--fw-lightBold);
+}
+
+.side-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.side-container > ul {
+  display: none;
+}
+
+.toggle {
+  padding-left: 10px;
+}
+/* Styles for dropdown clicked*/
+ .side-container > ul.clicked {
+   display: block;
+ }
+ 
+ .toggle.clicked {
+   padding-left: 50px;
+   font-size: 1.2em;
+ }
+ 
+ .side-container {
+   align-items: flex-start;
+   justify-content: space-between;
+ }
+
+/* Modifications for Desktop*/
+@media only screen and (min-width: 700px) {
+  .nav-container {
+    width: 50%;
+  }
+  
+  /* side bar */
+  .main-area {
+    flex: 5;
+  }
+  
+  .side-bar {
+    flex: 1;
+    padding-top: 60px;
+  }
+  
+  .side-container .toggle {
+    display: none;
+  }
+  .side-container > ul {
+    display: block;
+  }
+  
+  .side-container {
+    align-items: flex-start;
+  }
+  .horizon {
+    flex-direction: row;
+  }
 }
