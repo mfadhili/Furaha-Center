@@ -1,0 +1,122 @@
+/** Style sheet for Login Page*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Colors from palette https://coolors.co/palette/264653-2a9d8f-e9c46a-f4a261-e76f51 */
+:root {
+  --clr-primary: #2A9D8F;
+  --clr-primary-light: #9be7d7;
+  --clr-dark: #264653;
+  --clr-accent-light: #E9C46A;
+  --clr-accent: #F4A261;
+  --clr-accent-dark: #E76F51;
+  
+  /*  Font Weights*/
+  --fw-normal: 400;
+  --fw-lightBold: 500;
+  --fw-bold: 600;
+  --fw-black: 700;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: var(--clr-dark);
+  
+  background: url("../images/backgrounds/memphis-colorful.png");
+  background-size: 200px 200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+.banner {
+  display: flex;
+  justify-content: center;
+  background-color: var(--clr-dark);
+  margin-bottom: 20px;
+}
+
+.banner nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+}
+
+.logo{
+  padding: 5px 0px;
+}
+
+.logo a {
+  color: white;
+  font-size: 1.1em;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.05em;
+}
+
+.support-call a {
+  color: var(--clr-accent-light);
+  font-weight: var(--fw-lightBold);
+}
+
+/*Main area*/
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+  /* Hero section*/
+
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  order: 1;
+  width: 98%;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--clr-accent-light);
+}
+
+.hero-section img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 90% 0%;
+}
+
+.slogan {
+  padding: 10px;
+  font-size: 1.6em;
+  font-weight: var(--fw-black);
+  line-height: 1.6em;
+  color: var(--clr-dark);
+}
+
+.slogan span {
+  color: var(--clr-primary);
+}
+
+/* Login Form*/
+.login-card {
+  margin-bottom: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px 15px;
+  filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.25));
+}
+
+
