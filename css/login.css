@@ -111,12 +111,115 @@ a {
 
 /* Login Form*/
 .login-card {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   border: 1px solid white;
   border-radius: 5px;
   background-color: white;
-  padding: 10px 15px;
+  padding: 20px 25px;
   filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.25));
+  justify-content: center;
 }
 
+.login-card h3 {
+  color: var(--clr-primary);
+  padding: 10px 5px;
+  margin-bottom: 15px;
+}
+
+.login-form{
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70%;
+}
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type='text'],
+.form-row input[type='email'],
+.form-row input[type='password'] {
+  border: 1px solid var(--clr-primary);
+  border-radius: 3px;
+  width: 100%;
+  padding: 9px;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+    /*Validating CSS styles*/
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+  border: 1px solid var(--clr-accent-dark);
+  color: var(--clr-accent-dark);
+  box-shadow: none;
+}
+
+/* Password Icon and Hide/Reveal styles*/
+.password-container {
+  position: relative;
+}
+ .password-container i {
+   position: absolute;
+   top: 24%;
+   right: 4%;
+ }
+
+/* Button Styles*/
+
+.button-container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+
+.form-row button {
+  font-size: 1em;
+  font-weight: var(--fw-bold);
+  color: white;
+  background-color: #2A9D8F;
+  
+  border-radius: 3px;
+  
+  padding: 10px 13px;
+  cursor: pointer;
+}
+
+.form-row button.login {
+  background-color: var(--clr-dark);
+  border: none;
+}
+
+.form-row button.sign-up {
+  background-color: transparent;
+  color: #2A9D8F;
+  border: 2px solid #2A9D8F;
+}
+
+.password-reset {
+  width: 75%;
+  font-size: .9em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.password-reset a {
+  color: #2A9D8F;
+}
 
