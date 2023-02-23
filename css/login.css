@@ -46,7 +46,7 @@ a {
   margin-bottom: 20px;
 }
 
-.banner nav { and (max-width: 849px)
+.banner nav {
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -224,6 +224,8 @@ a {
   color: #2A9D8F;
 }
 
+/* Tablet view*/
+
 @media only screen and (min-width: 700px){
   .banner nav{
     width: 75%;
@@ -260,6 +262,8 @@ a {
     width: 450px;
   }
 }
+
+/* Desktop View*/
 
 @media only screen and (min-width: 850px) {
   .main-content {
