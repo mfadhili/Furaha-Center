@@ -46,7 +46,7 @@ a {
   margin-bottom: 20px;
 }
 
-.banner nav {
+.banner nav { and (max-width: 849px)
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -156,6 +156,7 @@ a {
   padding: 9px;
   font-size: 1em;
   margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
 }
 
     /*Validating CSS styles*/
@@ -223,3 +224,59 @@ a {
   color: #2A9D8F;
 }
 
+@media only screen and (min-width: 700px){
+  .banner nav{
+    width: 75%;
+    
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .main-content {
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+  .hero-section {
+    order: 1;
+    flex-direction: column;
+    margin-right: 5%;
+  }
+  
+  .hero-section img {
+    width: 700px;
+    height: 400px;
+  }
+  
+  .login-card {
+    width: 450px;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .main-content {
+    flex-wrap: nowrap;
+  }
+  
+  .container {
+    justify-content: flex-start;
+  }
+  
+  .hero-section {
+    order: 0;
+    width: 55%;
+  }
+  
+   .hero-section img {
+     width: 100%;
+     height: 400px;
+   }
+}
