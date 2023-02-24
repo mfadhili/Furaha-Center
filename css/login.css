@@ -38,6 +38,8 @@ a {
   text-decoration: none;
 }
 
+/* Mobile view is the default view*/
+
 /* Header */
 .banner {
   display: flex;
