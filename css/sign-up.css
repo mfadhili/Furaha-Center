@@ -1,0 +1,295 @@
+/** Style sheet for Login Page*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Colors from palette https://coolors.co/palette/264653-2a9d8f-e9c46a-f4a261-e76f51 */
+:root {
+  --clr-primary: #2A9D8F;
+  --clr-primary-light: #9be7d7;
+  --clr-dark: #264653;
+  --clr-accent-light: #E9C46A;
+  --clr-accent: #F4A261;
+  --clr-accent-dark: #E76F51;
+  
+  /*  Font Weights*/
+  --fw-normal: 400;
+  --fw-lightBold: 500;
+  --fw-bold: 600;
+  --fw-black: 700;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: var(--clr-dark);
+  
+  background: url("../images/backgrounds/memphis-colorful.png");
+  background-size: 200px 200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Mobile view is the default view*/
+
+/* Header */
+.banner {
+  display: flex;
+  justify-content: center;
+  background-color: var(--clr-dark);
+  margin-bottom: 20px;
+}
+
+.banner nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+}
+
+.logo{
+  padding: 5px 0px;
+}
+
+.logo a {
+  color: white;
+  font-size: 1.1em;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.05em;
+}
+
+.support-call a {
+  color: var(--clr-accent-light);
+  font-weight: var(--fw-lightBold);
+}
+
+/*Main area*/
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Hero section*/
+
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  order: 1;
+  width: 98%;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--clr-accent-light);
+}
+
+.hero-section img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 65% 0%;
+}
+
+.slogan {
+  padding: 10px;
+  font-size: 1.6em;
+  font-weight: var(--fw-black);
+  line-height: 1.6em;
+  color: var(--clr-dark);
+}
+
+.slogan span {
+  color: var(--clr-primary);
+}
+
+/* Sign up form*/
+.signup-card {
+  margin-bottom: 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px 25px;
+  filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.25));
+  justify-content: center;
+}
+
+.signup-card h3 {
+  color: var(--clr-accent-light);
+  padding: 10px 5px;
+  margin-bottom: 15px;
+}
+
+.signup-form{
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.signup-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70%;
+}
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type='text'],
+.form-row input[type='email'],
+.form-row input[type='password'],
+.form-row input[type='tel']{
+  border: 1px solid var(--clr-accent-light);
+  border-radius: 3px;
+  width: 100%;
+  padding: 9px;
+  font-size: 1em;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+/*Validating CSS styles*/
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid,
+.form-row input[type='tel']:invalid {
+  border: 1px solid var(--clr-accent-dark);
+  color: var(--clr-accent-dark);
+  box-shadow: none;
+}
+
+/* Password Icon and Hide/Reveal styles*/
+.password-container {
+  position: relative;
+}
+.password-container i {
+  position: absolute;
+  top: 24%;
+  right: 4%;
+}
+
+/* Button Styles*/
+
+.button-container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.form-row button {
+  font-size: 1em;
+  font-weight: var(--fw-bold);
+  color: white;
+  background-color: #2A9D8F;
+  
+  border-radius: 3px;
+  
+  padding: 10px 13px;
+  cursor: pointer;
+}
+
+.form-row button.register {
+  background-color: var(--clr-dark);
+  border: none;
+}
+
+.sign-in-call {
+  width: 75%;
+  font-size: .9em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sign-in-call a {
+  color: #2A9D8F;
+}
+
+/* Tablet view*/
+
+@media only screen and (min-width: 700px){
+  .banner nav{
+    width: 75%;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .main-content {
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+  .hero-section {
+    order: 1;
+    flex-direction: column;
+    margin-right: 5%;
+  }
+  
+  .hero-section img {
+    width: 700px;
+    height: 400px;
+  }
+  
+  .signup-card {
+    width: 450px;
+    
+  }
+  
+}
+
+/* Desktop View*/
+
+@media only screen and (min-width: 850px) {
+  .main-content {
+    flex-wrap: nowrap;
+  }
+  
+  .container {
+    justify-content: flex-end;
+    padding-top: 20px;
+  }
+  
+  .main-content{
+    justify-content: space-between;
+  }
+  
+  .hero-section {
+    order: 0;
+    width: 55%;
+    margin-right: 0;
+  }
+  
+  .hero-section img {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .sign-in-call {
+    width: 84%;
+    justify-content: space-around;
+  }
+}

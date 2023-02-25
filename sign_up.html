@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Styles sheet-->
+  <link rel="stylesheet" href="css/sign-up.css">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <title>Sign-up</title>
+</head>
+<body>
+  <!-- Header and Nav bar-->
+    <header class="banner">
+        <nav>
+          <div class="logo"><a href="#">Furaha Center</a></div>
+          <div class="support-call"><a href="#">support us</a></div>
+        </nav>
+    </header>
+
+    <!--  Main Content-->
+    <div class="container">
+        <section class="main-content">
+`            <!-- Sign up card-->
+            <div class="signup-card">
+                <h3>Sign up to the Care portal</h3>
+                <div class="signup-form">
+                    <form action="">
+                        <div class="form-row home-name">
+                            <input type="text" name="homeName" id="homeName" placeholder=" Home name">
+                        </div>
+                        <div class="form-row user-email">
+                            <input type="email" name="email" id="email" placeholder="Email e.g john@gmail.com">
+                        </div>
+                        <div class="form-row phone">
+                            <input type="tel" name="msisdn" id="phone" placeholder="Phone number">
+                        </div>
+                        <div class="form-row full-name">
+                            <input type="text" name="fullName" id="fullName" placeholder="Full Name">
+                        </div>
+                        <div class="form-row password-container">
+                            <input type="password" name="password" id="password" placeholder="Password">
+                            <i class="fa-solid fa-eye" id="eye"></i>
+                        </div>
+                        <div class="form-row password-container">
+                            <input type="password" name="password_confirm" id="password_confirm" placeholder="Confirm password">
+                            <i class="fa-solid fa-eye" id="eye_confirm"></i>
+                        </div>
+                        <!-- Buttons -->
+                        <div class="form-row button-container">
+                            <button class="register">Register</button>
+                        </div>
+                        <span class="form-row sign-in-call">You are already registered, <a href="/sign_in.html"> Click here</a></span>
+                    </form>
+                </div>
+            </div>
+
+        <!--  Hero section-->
+        <div class="hero-section">
+            <img src="images/sign_up/signup_image.jpg" alt="login picture">
+            <div class="slogan-container">
+                <p class="slogan">Making a difference in <span>every</span> Child !</p>
+            </div>
+        </div>
+    </section>
+  </div>
+</body>
+<!-- Password Reveal script-->
+<script src="script/password_reveal_signup.js"></script>
+</html>
