@@ -22,7 +22,7 @@
 
 .nav-bar {
   width: 100%;
-  background-color: var(--clr-dark);
+  background-color: var(--clr-primary);
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.25);
   
   display: flex;
@@ -45,9 +45,9 @@
 }
 
 .nav-container ul a {
-  color: var(--clr-primary-light);
+  color: var(--clr-dark);
   font-size: 0.8em;
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-black);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   padding-right: 5px;
@@ -75,7 +75,7 @@
 .side-bar {
   display: flex;
   
-  background-color: var(--clr-accent);
+  background-color: var(--clr-dark);
   border: 1px solid var(--clr-dark);
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.25);
   
@@ -90,8 +90,9 @@
 }
 
 .side-container a {
-  color: var(--clr-dark);
-  font-size: 0.9em;
+  color: var(--clr-accent-light);
+  text-transform: capitalize;
+  font-size: 0.8em;
   font-weight: var(--fw-lightBold);
 }
 
@@ -106,6 +107,7 @@
 
 .toggle {
   padding-left: 10px;
+  color: #E9C46A;
 }
 /* Styles for dropdown clicked*/
  .side-container > ul.clicked {
@@ -153,3 +155,4 @@
     flex-direction: row;
   }
 }
+
