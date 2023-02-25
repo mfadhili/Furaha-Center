@@ -96,7 +96,7 @@ a {
   width: 200px;
   height: 200px;
   object-fit: cover;
-  object-position: 90% 0%;
+  object-position: 65% 0%;
 }
 
 .slogan {
@@ -181,6 +181,46 @@ a {
   right: 4%;
 }
 
+/* Button Styles*/
+
+.button-container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.form-row button {
+  font-size: 1em;
+  font-weight: var(--fw-bold);
+  color: white;
+  background-color: #2A9D8F;
+  
+  border-radius: 3px;
+  
+  padding: 10px 13px;
+  cursor: pointer;
+}
+
+.form-row button.register {
+  background-color: var(--clr-dark);
+  border: none;
+}
+
+.sign-in-call {
+  width: 75%;
+  font-size: .9em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sign-in-call a {
+  color: #2A9D8F;
+}
+
 /* Tablet view*/
 
 @media only screen and (min-width: 700px){
@@ -240,5 +280,10 @@ a {
   .hero-section img {
     width: 100%;
     height: 400px;
+  }
+  
+  .sign-in-call {
+    width: 84%;
+    justify-content: space-around;
   }
 }
