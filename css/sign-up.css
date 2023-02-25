@@ -269,12 +269,18 @@ a {
   }
   
   .container {
-    justify-content: flex-start;
+    justify-content: flex-end;
+    padding-top: 20px;
+  }
+  
+  .main-content{
+    justify-content: space-between;
   }
   
   .hero-section {
     order: 0;
     width: 55%;
+    margin-right: 0;
   }
   
   .hero-section img {
