@@ -111,7 +111,7 @@ a {
   color: var(--clr-primary);
 }
 
-/* Login Form*/
+/* Sign in form*/
 .signin-card {
   margin-bottom: 15px;
   border: 1px solid white;
@@ -231,7 +231,6 @@ a {
 @media only screen and (min-width: 700px){
   .banner nav{
     width: 75%;
-    
   }
   
   .container {
@@ -246,7 +245,6 @@ a {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    
   }
   
   .hero-section {

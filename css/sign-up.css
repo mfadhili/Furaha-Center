@@ -111,7 +111,75 @@ a {
   color: var(--clr-primary);
 }
 
+/* Sign up form*/
+.signup-card {
+  margin-bottom: 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px 25px;
+  filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.25));
+  justify-content: center;
+}
 
+.signup-card h3 {
+  color: var(--clr-accent-light);
+  padding: 10px 5px;
+  margin-bottom: 15px;
+}
+
+.signup-form{
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.signup-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70%;
+}
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type='text'],
+.form-row input[type='email'],
+.form-row input[type='password'],
+.form-row input[type='tel']{
+  border: 1px solid var(--clr-accent-light);
+  border-radius: 3px;
+  width: 100%;
+  padding: 9px;
+  font-size: 1em;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+/*Validating CSS styles*/
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid,
+.form-row input[type='tel']:invalid {
+  border: 1px solid var(--clr-accent-dark);
+  color: var(--clr-accent-dark);
+  box-shadow: none;
+}
+
+/* Password Icon and Hide/Reveal styles*/
+.password-container {
+  position: relative;
+}
+.password-container i {
+  position: absolute;
+  top: 24%;
+  right: 4%;
+}
 
 /* Tablet view*/
 
@@ -146,7 +214,10 @@ a {
     height: 400px;
   }
   
-  
+  .signup-card {
+    width: 450px;
+    
+  }
   
 }
 
